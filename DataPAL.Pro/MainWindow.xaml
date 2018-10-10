@@ -1,0 +1,19 @@
+﻿<Window x:Class="DataPAL.Pro.MainWindow"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        mc:Ignorable="d"
+        FontFamily="pack://application:,,,/MaterialDesignThemes.Wpf;component/Resources/Roboto/#Roboto"
+        Title="DataPAL 2.0" Height="525" Width="350" Icon="Images/Fallout.ico" ResizeMode="NoResize">
+    <Window.Resources>
+        <ResourceDictionary Source="MergedResources.xaml"></ResourceDictionary>
+    </Window.Resources>
+    <Grid>
+        <Grid.RowDefinitions>
+            <RowDefinition Height="Auto"/>
+            <RowDefinition Height="*"/>
+        </Grid.RowDefinitions>
+        <ContentControl x:Name="ContentControl" Grid.Row="1"/>
+    </Grid>
+</Window>

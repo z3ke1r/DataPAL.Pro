@@ -1,0 +1,176 @@
+﻿<UserControl x:Class="DataPAL.Pro.UserControl1" x:Name="Uc1"
+             xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+             xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+             xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006" 
+             xmlns:d="http://schemas.microsoft.com/expression/blend/2008" 
+             xmlns:materialDesign="http://materialdesigninxaml.net/winfx/xaml/themes"
+             mc:Ignorable="d" 
+             d:DesignHeight="475" d:DesignWidth="325">
+
+    <UserControl.Resources>
+        <ResourceDictionary Source="MergedResources.xaml"></ResourceDictionary>
+    </UserControl.Resources>
+
+    <Grid Background="{DynamicResource PrimaryHueDarkForegroundBrush}">
+        
+        <Grid.ColumnDefinitions>
+            <ColumnDefinition Width="162.5"/>
+            <ColumnDefinition Width="162.5"/>
+        </Grid.ColumnDefinitions>
+        <Grid.RowDefinitions>
+            <RowDefinition Height="Auto"/>
+            <RowDefinition Height="Auto"/>
+            <RowDefinition Height="Auto"/>
+            <RowDefinition Height="Auto"/>
+            <RowDefinition Height="Auto"/>
+            <RowDefinition Height="Auto"/>
+            <RowDefinition Height="Auto"/>
+            <RowDefinition Height="Auto"/>
+            <RowDefinition Height="Auto"/>
+        </Grid.RowDefinitions>
+
+        <ComboBox x:Name="SearchBar" Grid.Row="0" Grid.ColumnSpan="2" HorizontalAlignment="Center"
+                  VerticalAlignment="Top" Width="250" MaxDropDownHeight="190" Margin="0,15,0,10" FontSize="10"
+                  IsEditable="True" Text=" Search" KeyDown="SearchBar_KeyDown" Loaded="SearchBar_Loaded" />
+        
+        <materialDesign:Card x:Name="PlacesCard" Grid.Row="1" Grid.Column="0" Width="150" Padding="4,5,0,0"
+                             Height="130" VerticalAlignment="Center" HorizontalAlignment="Center" Margin="8,4,0,4"
+                             MouseDown="PlacesCard_MouseDown">
+            <Grid Margin="8,0,8,8">
+                <Grid.RowDefinitions>
+                    <RowDefinition Height="60" />
+                    <RowDefinition Height="Auto" />
+                    <RowDefinition Height="Auto" />
+                </Grid.RowDefinitions>
+                <Image Source="Images/baseline_dashboard_black_48dp.png" Height="60"/>
+                <StackPanel Grid.Row="1" Margin="8 8 8 4" >
+                    <TextBlock Style="{StaticResource MaterialDesignSubheadingTextBlock}" Margin="0" FontSize="12"
+                               FontWeight="Bold">
+                        <Run Text="Boundaries" />
+                    </TextBlock>
+                    <TextBlock Style="{StaticResource MaterialDesignBody1TextBlock}" TextWrapping="Wrap" FontSize="8"
+                               VerticalAlignment="Center" Margin="0,0,0,5">
+                        <Run Text="Data about locations or boundaries e.g. Airports, Cities, Zoning Districts, etc." />
+                    </TextBlock>
+                </StackPanel>
+            </Grid>
+        </materialDesign:Card>
+
+        <materialDesign:Card x:Name="ImageryCard" Grid.Row="1" Grid.Column="1" Width="150" Padding="4,5,0,0"
+                             Height="130" HorizontalAlignment="Right" VerticalAlignment="Center" Margin="0,0,0,4"
+                             MouseDown="ImageryCard_MouseDown">
+            <Grid Margin="8,0,8,8">
+                <Grid.RowDefinitions>
+                    <RowDefinition Height="60" />
+                    <RowDefinition Height="Auto" />
+                    <RowDefinition Height="Auto" />
+                </Grid.RowDefinitions>
+                <Image Source="Images/Imagery.png" Height="60"/>
+                <StackPanel Grid.Row="1" Margin="8,8,8,4" >
+                    <TextBlock Style="{StaticResource MaterialDesignSubheadingTextBlock}" Margin="0" FontSize="12"
+                               FontWeight="Bold">
+                        <Run Text="Imagery" />
+                    </TextBlock>
+                    <TextBlock Style="{StaticResource MaterialDesignBody1TextBlock}" TextWrapping="Wrap" FontSize="8"
+                               VerticalAlignment="Center" Margin="0,0,0,5">
+                        <Run Text="Aerial imagery and other raster datasets e.g. DEMs, LiDAR, etc." />
+                    </TextBlock>
+                </StackPanel>
+            </Grid>
+        </materialDesign:Card>
+
+        <materialDesign:Card x:Name="HydroCard" Grid.Column="0" Grid.Row="2" Width="150" Padding="4,5,0,0" Height="130"
+                             HorizontalAlignment="Center" VerticalAlignment="Center" Margin="8,4,0,4"
+                             MouseDown="HydroCard_MouseDown">
+            <Grid Margin="8,8,8,8">
+                <Grid.RowDefinitions>
+                    <RowDefinition Height="60" />
+                    <RowDefinition Height="Auto" />
+                    <RowDefinition Height="Auto" />
+                </Grid.RowDefinitions>
+                <Image Source="Images/baseline_waves_black_48dp.png" Height="60"/>
+                <StackPanel Grid.Row="1" Margin="8 8 8 4" >
+                    <TextBlock Style="{StaticResource MaterialDesignSubheadingTextBlock}" Margin="0" FontSize="11"
+                               FontWeight="Bold">
+                        <Run Text="Hydrology and Ocean" />
+                    </TextBlock>
+                    <TextBlock Style="{StaticResource MaterialDesignBody1TextBlock}" TextWrapping="Wrap" FontSize="8"
+                               VerticalAlignment="Center" Margin="0,0,0,5">
+                        <Run Text="Data about watersheds, basins, rivers, streams, oceans, etc." />
+                    </TextBlock>
+                </StackPanel>
+            </Grid>
+        </materialDesign:Card>
+
+        <materialDesign:Card x:Name="UtilCard" Grid.Row="2" Width="150" Padding="4,5,0,0" Height="130" Grid.Column="1"
+                             HorizontalAlignment="Right" VerticalAlignment="Center" Margin="0,4"
+                             MouseDown="UtilCard_MouseDown">
+            <Grid Margin="8,8,8,8">
+                <Grid.RowDefinitions>
+                    <RowDefinition Height="60" />
+                    <RowDefinition Height="Auto" />
+                    <RowDefinition Height="Auto" />
+                </Grid.RowDefinitions>
+                <Image Source="Images/baseline_commute_black_48dp.png" Height="60"/>
+                <StackPanel Grid.Row="1" Margin="8 8 8 4" >
+                    <TextBlock Style="{StaticResource MaterialDesignSubheadingTextBlock}" Margin="0" FontSize="12"
+                               FontWeight="Bold">
+                        <Run Text="Infrastructure" />
+                    </TextBlock>
+                    <TextBlock Style="{StaticResource MaterialDesignBody1TextBlock}" TextWrapping="Wrap" FontSize="8"
+                               VerticalAlignment="Center" Margin="0,0,0,5">
+                        <Run Text="Data about utility networks, infrastructure, roads, etc." />
+                    </TextBlock>
+                </StackPanel>
+            </Grid>
+        </materialDesign:Card>
+
+        <materialDesign:Card x:Name="EnvCard" Grid.Row="3" Grid.Column="0" Width="150" Padding="4,5,0,0" Height="130"
+                             HorizontalAlignment="Center" VerticalAlignment="Center" Margin="8,4,0,15"
+                             MouseDown="EnvCard_MouseDown">
+            <Grid Margin="8,0,0,0">
+                <Grid.RowDefinitions>
+                    <RowDefinition Height="60" />
+                    <RowDefinition Height="Auto" />
+                    <RowDefinition Height="Auto" />
+                </Grid.RowDefinitions>
+                <Image Source="Images/baseline_public_black_48dp.png" Height="60"/>
+                <StackPanel Grid.Row="1" Margin="8 8 8 4" >
+                    <TextBlock Style="{StaticResource MaterialDesignSubheadingTextBlock}" Margin="0" FontSize="12"
+                               FontWeight="Bold">
+                        <Run Text="Environmental" />
+                    </TextBlock>
+                    <TextBlock Style="{StaticResource MaterialDesignBody1TextBlock}" TextWrapping="Wrap" FontSize="8"
+                               VerticalAlignment="Center" Margin="0,0,0,5">
+                        <Run Text="Data about habitat and environmental monitoring e.g. eagles nests, wqm data, etc." />
+                    </TextBlock>
+                </StackPanel>
+            </Grid>
+        </materialDesign:Card>
+
+        <materialDesign:Card x:Name="AuthCard" Grid.Row="3" Width="150" Padding="4,5,0,0" Height="130" Grid.Column="1"
+                             HorizontalAlignment="Right" VerticalAlignment="Center" Margin="0,4,0,15"
+                             MouseDown="AuthCard_MouseDown">
+            <Grid Margin="8,4,0,4">
+                <Grid.RowDefinitions>
+                    <RowDefinition Height="60" />
+                    <RowDefinition Height="Auto" />
+                    <RowDefinition Height="Auto" />
+                </Grid.RowDefinitions>
+                <Image Source="Images/EPC LOGO blk small.png" Height="60"/>
+                <StackPanel Grid.Row="1" Margin="8 8 8 4" >
+                    <TextBlock Style="{StaticResource MaterialDesignSubheadingTextBlock}" Margin="0" FontSize="12"
+                               FontWeight="Bold">
+                        <Run Text="Authoritative" />
+                    </TextBlock>
+                    <TextBlock Style="{StaticResource MaterialDesignBody1TextBlock}" TextWrapping="Wrap" FontSize="8"
+                               VerticalAlignment="Center" Margin="0,0,0,5">
+                        <Run
+                            Text="Data created and maintained by EPC e.g. conservation easements, water and air monitoring, etc." />
+                    </TextBlock>
+                </StackPanel>
+            </Grid>
+        </materialDesign:Card>
+
+    </Grid>
+</UserControl>
