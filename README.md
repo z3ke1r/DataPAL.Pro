@@ -1,8 +1,8 @@
 # DataPAL Pro
-## The right layer is easy to find
 
 ![DataPAL1](https://i.imgur.com/OSspjK1.png) ![DataPAL2](https://i.imgur.com/OSspjK1.png)
 
+## The Right Layer is Easy to Find
 Where was that drainage basins layer? Was it this folder?....Nope...this one?...Nah...this folder has two which one is the updated one? 
 
 Hate browsing through the catalog tree and countless sub folders to add a layer to the map? Or maybe you want to make sure your users are working with the proper managed data instead of a local copy that could be out of date.
