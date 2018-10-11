@@ -9,7 +9,7 @@
         <ResourceDictionary Source="MergedResources.xaml"></ResourceDictionary>
     </UserControl.Resources>
 
-    <Grid Background="{DynamicResource PrimaryHueDarkForegroundBrush}">
+    <Grid Background="{DynamicResource {x:Static SystemColors.ControlLightBrushKey}}">
 
         <Grid.RowDefinitions>
             <RowDefinition Height="Auto"/>
@@ -23,9 +23,6 @@
             <RowDefinition Height="Auto"/>
         </Grid.RowDefinitions>
 
-        <Control Foreground="{DynamicResource {x:Static SystemColors.WindowBrushKey}}"
-                 Background="{DynamicResource {x:Static SystemColors.WindowFrameBrushKey}}"
-                 BorderBrush="{DynamicResource {x:Static SystemColors.HighlightBrushKey}}" />
 
         <ListBox x:Name="LayerList" Grid.Row="1" Width="280" Height="215" VerticalAlignment="Center" Margin="0,5,0,0"
                  Background="{DynamicResource {x:Static SystemColors.WindowBrushKey}}" FontSize="10" />

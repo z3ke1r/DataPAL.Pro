@@ -182,21 +182,15 @@
     <Resource Include="Images\Fallout.ico">
       <CopyToOutputDirectory>Always</CopyToOutputDirectory>
     </Resource>
-    <AddInContent Include="Images\Fallout.png">
-      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
-    </AddInContent>
-    <AddInContent Include="Images\Falloutsmall.png">
-      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
-    </AddInContent>
-    <Resource Include="Images\Imagery.png">
-      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
-    </Resource>
     <AddInContent Include="Images\layersIcon.png">
       <CopyToOutputDirectory>Always</CopyToOutputDirectory>
     </AddInContent>
     <Resource Include="Images\UpArrow.png">
       <CopyToOutputDirectory>Always</CopyToOutputDirectory>
     </Resource>
+  </ItemGroup>
+  <ItemGroup>
+    <Resource Include="Images\photo_library_black_48dp.png" />
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
   <!--

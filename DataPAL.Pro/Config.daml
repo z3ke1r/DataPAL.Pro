@@ -1,12 +1,12 @@
 ﻿<ArcGIS defaultAssembly="DataPAL.Pro.dll" defaultNamespace="DataPAL.Pro" xmlns="http://schemas.esri.com/DADF/Registry" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://schemas.esri.com/DADF/Registry file:///C:/Program%20Files/ArcGIS/Pro/bin/ArcGIS.Desktop.Framework.xsd">
   <AddInInfo id="{310f0e16-5872-4f29-8c69-65b1eac1d4fd}" version="1.0" desktopVersion="2.2.12813">
-    <Name>DataPAL.Pro</Name>
-    <Description>DataPAL.Pro description</Description>
-    <Image>Images\AddinDesktop32.png</Image>
-    <Author>robertsonc</Author>
-    <Company>Acme</Company>
+    <Name>DataPAL Pro</Name>
+    <Description>Allows users to easily browse layers by catagory or search bar and add them to the currently desired map</Description>
+    <Image>Images\layersIcon.png</Image>
+    <Author>Chris Robertson</Author>
+    <Company>EPC</Company>
     <Date>10/9/2018 12:16:05 PM, 2018</Date>
-    <Subject>Framework</Subject>
+    <Subject>Content</Subject>
     <!-- Note subject can be one or more of these topics:
                     Content, Framework, Editing, Geodatabase, Geometry, Geoprocessing, Layouts, Map Authoring, Map Exploration -->
   </AddInInfo>
@@ -21,7 +21,7 @@
       <groups>
         <!-- comment this out if you have no controls on the Addin tab to avoid
               an empty group-->
-        <group id="DataPAL_Pro_Group1" caption="Group 1" appearsOnAddInTab="true">
+        <group id="DataPAL_Pro_Group1" caption="EPC Tools" appearsOnAddInTab="true">
           <!-- host controls within groups -->
           <button refID="DataPAL_Pro_Button1" size="large" />
         </group>
