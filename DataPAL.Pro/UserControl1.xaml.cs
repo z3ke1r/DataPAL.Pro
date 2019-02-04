@@ -47,7 +47,7 @@ namespace DataPAL.Pro
 
             UserControl2 ucControl2 = new UserControl2();
             ucControl2.LayerList.Items.Clear();
-            ucControl2.PopulatecheckedListBox1(ucControl2.LayerList, @"\\Epcnas\gis\DataPal\Layers\Boundaries", "*.lyr");
+            ucControl2.PopulatecheckedListBox1(ucControl2.LayerList, @"\\nas\gis\DataPal\Layers\Boundaries", "*.lyr");
             MainWindow win = (MainWindow)Window.GetWindow(this);
             win.ContentControl.Content = ucControl2;
         }
@@ -56,7 +56,7 @@ namespace DataPAL.Pro
         {
             UserControl2 ucControl2 = new UserControl2();
             ucControl2.LayerList.Items.Clear();
-            ucControl2.PopulatecheckedListBox1(ucControl2.LayerList, @"\\Epcnas\gis\DataPal\Layers\Imagery", "*.lyr");
+            ucControl2.PopulatecheckedListBox1(ucControl2.LayerList, @"\\nas\gis\DataPal\Layers\Imagery", "*.lyr");
             MainWindow win = (MainWindow)Window.GetWindow(this);
             win.ContentControl.Content = ucControl2;
         }
@@ -66,7 +66,7 @@ namespace DataPAL.Pro
 
             UserControl2 ucControl2 = new UserControl2();
             ucControl2.LayerList.Items.Clear();
-            ucControl2.PopulatecheckedListBox1(ucControl2.LayerList, @"\\Epcnas\gis\DataPal\Layers\Water", "*.lyr");
+            ucControl2.PopulatecheckedListBox1(ucControl2.LayerList, @"\\nas\gis\DataPal\Layers\Water", "*.lyr");
             MainWindow win = (MainWindow)Window.GetWindow(this);
             win.ContentControl.Content = ucControl2;
 
@@ -76,7 +76,7 @@ namespace DataPAL.Pro
         {
             UserControl2 ucControl2 = new UserControl2();
             ucControl2.LayerList.Items.Clear();
-            ucControl2.PopulatecheckedListBox1(ucControl2.LayerList, @"\\Epcnas\gis\DataPal\Layers\Transportation", "*.lyr");
+            ucControl2.PopulatecheckedListBox1(ucControl2.LayerList, @"\\nas\gis\DataPal\Layers\Transportation", "*.lyr");
             MainWindow win = (MainWindow)Window.GetWindow(this);
             win.ContentControl.Content = ucControl2;
         }
@@ -85,7 +85,7 @@ namespace DataPAL.Pro
         {
             UserControl2 ucControl2 = new UserControl2();
             ucControl2.LayerList.Items.Clear();
-            ucControl2.PopulatecheckedListBox1(ucControl2.LayerList, @"\\Epcnas\gis\DataPal\Layers\HabitatEnvironment", "*.lyr");
+            ucControl2.PopulatecheckedListBox1(ucControl2.LayerList, @"\\nas\gis\DataPal\Layers\HabitatEnvironment", "*.lyr");
             MainWindow win = (MainWindow)Window.GetWindow(this);
             win.ContentControl.Content = ucControl2;
         }
@@ -94,7 +94,7 @@ namespace DataPAL.Pro
         {
             UserControl2 ucControl2 = new UserControl2();
             ucControl2.LayerList.Items.Clear();
-            ucControl2.PopulatecheckedListBox1(ucControl2.LayerList, @"\\Epcnas\gis\DataPal\Layers\EPC_Authoritative", "*.lyr");
+            ucControl2.PopulatecheckedListBox1(ucControl2.LayerList, @"\\nas\gis\DataPal\Layers\EPC_Authoritative", "*.lyr");
             MainWindow win = (MainWindow)Window.GetWindow(this);
             win.ContentControl.Content = ucControl2;
         }
