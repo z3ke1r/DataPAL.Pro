@@ -161,7 +161,7 @@
                     <RowDefinition Height="Auto" />
                     <RowDefinition Height="Auto" />
                 </Grid.RowDefinitions>
-                <Image Source="Images/EPC LOGO blk small.png" Height="60"/>
+                <Image Source="Images/AD LOGO blk small.png" Height="60"/>
                 <StackPanel Grid.Row="1" Margin="8 8 8 4" >
                     <TextBlock Style="{StaticResource MaterialDesignSubheadingTextBlock}" Margin="0" FontSize="12"
                                FontWeight="Bold">
@@ -170,7 +170,7 @@
                     <TextBlock Style="{StaticResource MaterialDesignBody1TextBlock}" TextWrapping="Wrap" FontSize="8"
                                VerticalAlignment="Center" Margin="0,0,0,5">
                         <Run
-                            Text="Data created and maintained by EPC e.g. conservation easements, water and air monitoring." />
+                            Text="Data created and maintained by AD e.g. conservation easements, water and air monitoring." />
                     </TextBlock>
                 </StackPanel>
             </Grid>
