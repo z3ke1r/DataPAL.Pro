@@ -23,15 +23,15 @@ namespace DataPAL.Pro
             InitializeComponent();
             ContentControl.Content = new UserControl1();
 
-            ShadowAssist.SetShadowDepth(this, ShadowDepth.Depth0); //Needed to use Material Design dependencies for some reason
-            var hue = new Hue("Dummy", Colors.AliceBlue, Colors.AntiqueWhite); //Needed to use Material Design dependencies for some reason
+            ShadowAssist.SetShadowDepth(this, ShadowDepth.Depth0); //Optional: fixed build error bug caused by Material Design dependencies
+            var hue = new Hue("Dummy", Colors.AliceBlue, Colors.AntiqueWhite); //Optional: fixed build error bug caused by Material Design dependencies
 
-            _dataFolders.Add(@"\\Epcnas\gis\DataPal\Layers\Boundaries");
-            _dataFolders.Add(@"\\Epcnas\gis\DataPal\Layers\Imagery");
-            _dataFolders.Add(@"\\Epcnas\gis\DataPal\Layers\Water");
-            _dataFolders.Add(@"\\Epcnas\gis\DataPal\Layers\Transportation");
-            _dataFolders.Add(@"\\Epcnas\gis\DataPal\Layers\HabitatEnvironment");
-            _dataFolders.Add(@"\\Epcnas\gis\DataPal\Layers\EPC_Authoritative");
+            _dataFolders.Add(@"\\nas\gis\DataPal\Layers\Boundaries");
+            _dataFolders.Add(@"\\nas\gis\DataPal\Layers\Imagery");
+            _dataFolders.Add(@"\\nas\gis\DataPal\Layers\Water");
+            _dataFolders.Add(@"\\nas\gis\DataPal\Layers\Transportation");
+            _dataFolders.Add(@"\\nas\gis\DataPal\Layers\HabitatEnvironment");
+            _dataFolders.Add(@"\\nas\gis\DataPal\Layers\AD_Authoritative");
 
             //Populate search source list and layer path dictionary
             foreach (var pth in _dataFolders)
