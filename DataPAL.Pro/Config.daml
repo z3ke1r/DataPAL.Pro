@@ -21,7 +21,7 @@
       <groups>
         <!-- comment this out if you have no controls on the Addin tab to avoid
               an empty group-->
-        <group id="DataPAL_Pro_Group1" caption="EPC Tools" appearsOnAddInTab="true">
+        <group id="DataPAL_Pro_Group1" caption="DataPAL" appearsOnAddInTab="true">
           <!-- host controls within groups -->
           <button refID="DataPAL_Pro_Button1" size="large" />
         </group>
@@ -29,7 +29,7 @@
       <controls>
         <!-- add your controls here -->
         <button id="DataPAL_Pro_Button1" caption="DataPAL" className="Button1" loadOnClick="true" smallImage="Images\layersIcon.png" largeImage="Images\layersIcon.png">
-          <tooltip heading="Launch DataPAL">Add layers from the EPC Data Library<disabledText /></tooltip>
+          <tooltip heading="Launch DataPAL">Add layers from the Data Library<disabledText /></tooltip>
         </button>
       </controls>
     </insertModule>
